@@ -21,6 +21,8 @@
 		EA019F4817A70ECC00933682 /* A_AlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019F4717A70ECC00933682 /* A_AlgorithmTests.m */; };
 		EA019F5517A70F0500933682 /* AARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019F5417A70F0500933682 /* AARootViewController.m */; };
 		EA019F5A17A70F4F00933682 /* AARootView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019F5917A70F4F00933682 /* AARootView.m */; };
+		EA019F5E17A720DB00933682 /* AAPointNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA019F5D17A720DB00933682 /* AAPointNode.m */; };
+		EA22A10517A7B2C400607B85 /* AAToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA22A10417A7B2C400607B85 /* AAToolBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		EA019F5417A70F0500933682 /* AARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AARootViewController.m; sourceTree = "<group>"; };
 		EA019F5817A70F4F00933682 /* AARootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AARootView.h; sourceTree = "<group>"; };
 		EA019F5917A70F4F00933682 /* AARootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AARootView.m; sourceTree = "<group>"; };
+		EA019F5C17A720DB00933682 /* AAPointNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPointNode.h; sourceTree = "<group>"; };
+		EA019F5D17A720DB00933682 /* AAPointNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPointNode.m; sourceTree = "<group>"; };
+		EA22A10317A7B2C400607B85 /* AAToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAToolBar.h; sourceTree = "<group>"; };
+		EA22A10417A7B2C400607B85 /* AAToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAToolBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,8 @@
 		EA019F5117A70EF600933682 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				EA22A10217A7B29A00607B85 /* ToolBar */,
+				EA019F5B17A720D100933682 /* PointNode */,
 				EA019F5717A70F4400933682 /* RootView */,
 				EA019F5217A70EF600933682 /* RootViewController */,
 			);
@@ -176,6 +184,24 @@
 				EA019F5917A70F4F00933682 /* AARootView.m */,
 			);
 			path = RootView;
+			sourceTree = "<group>";
+		};
+		EA019F5B17A720D100933682 /* PointNode */ = {
+			isa = PBXGroup;
+			children = (
+				EA019F5C17A720DB00933682 /* AAPointNode.h */,
+				EA019F5D17A720DB00933682 /* AAPointNode.m */,
+			);
+			path = PointNode;
+			sourceTree = "<group>";
+		};
+		EA22A10217A7B29A00607B85 /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				EA22A10317A7B2C400607B85 /* AAToolBar.h */,
+				EA22A10417A7B2C400607B85 /* AAToolBar.m */,
+			);
+			path = ToolBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA019F5A17A70F4F00933682 /* AARootView.m in Sources */,
+				EA019F5E17A720DB00933682 /* AAPointNode.m in Sources */,
 				EA019F5517A70F0500933682 /* AARootViewController.m in Sources */,
 				EA019F3317A70ECC00933682 /* AAAppDelegate.m in Sources */,
 				EA019F2F17A70ECC00933682 /* main.m in Sources */,
+				EA22A10517A7B2C400607B85 /* AAToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +500,7 @@
 				EA019F4D17A70ECC00933682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA019F4E17A70ECC00933682 /* Build configuration list for PBXNativeTarget "A-AlgorithmTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +509,7 @@
 				EA019F5017A70ECC00933682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
